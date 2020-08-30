@@ -1,3 +1,5 @@
+//Problem Statement
+//Given n numbers (both +ve and -ve), arranged in a circle, fnd the maximum sum of consecutive number.
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
