@@ -1,3 +1,5 @@
+//Input: arr[] = {4, 3, 7, 8, 6, 2, 1}
+//Output: arr[] = {3, 7, 4, 8, 2, 6, 1}
 //Checking in alternate way
 //First, if the number is greater than next element, swap both
 //Second, if the number is less than next element, swap both
