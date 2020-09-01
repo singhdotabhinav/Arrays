@@ -2,19 +2,21 @@
 void pairs(int arr[], int n, int k){
 
     sort(arr,arr+n);
-    int i=0,j=n-1;
+    int i=0,j=0;
 
-    while(i<n&&j>0){
+    while(j<n){
 
-        if(i!=j&&abs(arr[i]-arr[j])==k){
-            cout<<arr[i]<<"\t"<<arr[j];
-            return;
-        }
-        if(abs(arr[i]-arr[j])>k)
+        if((arr[i]-arr[j])==k){
+            cout << "Pair Found: (" << arr[i] <<
+                        ", " << arr[j] << ")";
             i++;
-        else
             j++;
+            //return;
+        }
+        if((arr[i]-arr[j])>k)
+            j++;
+        else
+            i++;
 
     }
-    cout<<"-1";
 }
