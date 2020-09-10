@@ -1,4 +1,8 @@
+//Find Maximum Product Subarrays
+//Input: arr[] = {6, -3, -10, 0, 2}
+//Output:   180  // The subarray is {6, -3, -10}
 
+//Traverse from one end of array, find max product of subarray, then traverse from another end of array and find max product subarray, then find max of both
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
