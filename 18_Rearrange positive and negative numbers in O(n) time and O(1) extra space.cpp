@@ -1,15 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+//Input  [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+//Output [9, -7, 8, -3, 5, -1, 2, 4, 6]
+//Output may differ
+//Separate all positive and negative numbers
+//Take two pointer, one at start of negative number and other at start of positive number
+//Swap i and j alternatively
 #include<bits/stdc++.h>
-#include<stack>
-#include <string>
-
 #include<iostream>
 
 using namespace std;
-
+//Function to find index of first positive element
 int findJindex(int arr[], int n){
-
     for(int j=0;j<n;j++){
         if(arr[j]>0){
             //cout<<arr[j];
@@ -17,6 +17,7 @@ int findJindex(int arr[], int n){
         }
     }
 }
+
 void rearange(int arr[], int n){
 
     sort(arr,arr+n);
@@ -42,8 +43,6 @@ int main(){
                   5, 6, -7, 8, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
     rearange(arr,n);
-
-    //cout<<"Total Count "<<count("ewqaa")<<"\n";
     return 0;
 }
 
