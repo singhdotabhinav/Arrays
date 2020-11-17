@@ -16,3 +16,5 @@ int max_sum( int arr[], int n ){
     }
     return globalSum;
 }
+
+//very very cute
